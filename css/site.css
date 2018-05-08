@@ -1,179 +1,200 @@
 @font-face {
-  font-family: 'Assistant';
-  src: url('../fonts/Assistant-Regular.ttf');
+    font-family: 'Assistant';
+    src: url('../fonts/Assistant-Regular.ttf');
 }
+
 @font-face {
-  font-family: 'Assistant ExtraBold';
-  src: url('../fonts/Assistant-ExtraBold.ttf');
+    font-family: 'Assistant ExtraBold';
+    src: url('../fonts/Assistant-ExtraBold.ttf');
 }
 
 .container {
-  font-family: 'Assistant ExtraBold', Verdana, Geneva, Tahoma, sans-serif;
-  font-style: bold;
+    font-family: 'Assistant ExtraBold', Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
 }
 
-html { 
-  background: url(../images/header.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+html {
+    background: url(../images/header.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
+body {
+    background-color: rgba(255, 255, 255, 0.40);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 200px;
+    overflow: hidden;
+    /* to remove scollbar */
+}
 
-body{
-  background-color: rgba(255,255,255,0.40);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-padding-bottom: 200px;}
-
-.row{
+.row {
     text-align: center;
     padding: 25px 25px;
 }
 
 #headertext {
-  font-size: 40px;
-  display:table;
-  margin:0 auto;
+    font-size: 40px;
+    display: table;
+    margin: 0 auto;
 }
 
 #vraag textarea {
     font-size: 40px;
     border-radius: 40px;
-  }
+}
 
-#text{
+#text {
     text-align: left;
-    font-size: 18px;    
+    font-size: 18px;
 }
 
-#gent{
+#gent {
     height: 75px;
-    padding: 5px;    
+    padding: 5px;
 }
 
-#foresight{
+#foresight {
     height: 55px;
     padding: 3px;
 }
 
-textarea{
-    resize: none; 
-    text-align: center;    
+textarea {
+    resize: none;
+    text-align: center;
 }
 
-#antw1 textarea, #antw2 textarea {
-    font-size: 35px;  
-color : #212529;}
+#antw1 textarea,
+#antw2 textarea {
+    font-size: 35px;
+    color: #212529;
+}
 
-#antw1 textarea{
+#antw1 textarea {
     background-color: #8BC297;
     border-color: #8BC297;
-    border-radius: 40px;    
+    border-radius: 40px;
     padding: 15px;
     font-size: 35px;
-  }
+}
 
-#antw2 textarea{
+#antw2 textarea {
     background-color: #DC6966;
     border-color: #DC6966;
     border-radius: 40px;
-    padding: 15px;   
+    padding: 15px;
     font-size: 35px;
-    
+
 }
 
-#score{
+#score {
     font-size: 60px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-#vs{font-size: 20px;
-  vertical-align: bottom ;
-  line-height: 110px;}
+#vs {
+    font-size: 20px;
+    vertical-align: bottom;
+    line-height: 110px;
+}
 
 
-#countdown{   
-     font-size: 45px;
+#countdown {
+    font-size: 45px;
 }
 
 .blur-it {
-  filter: blur(4px);
+    filter: blur(4px);
 }
 
 .modal-wrapper {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0; 
-  left: 0;
-  background: rgba(0, 0,0, 0.50);
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.25s ease-in-out;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.50);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
 }
 
 .modal-wrapper.open {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal {
-  width: 600px;
-  height: 400px;
-  display: block;
-  margin: 50% 0 0 -300px;
-  position: relative;
-  top: 50%; 
-  left: 50%;
-  background: #fff;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: 50% 0 0 -300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .modal-wrapper.open .modal {
-  margin-top: -200px;
-  opacity: 1;
+    margin-top: -200px;
+    opacity: 1;
 }
 
-.head { 
-  width: 90%;
-  height: 32px;
-  padding: 12px 30px;
-  overflow: hidden;
-  background: rgba(255, 193, 7, 1);
-  box-sizing: content-box;
+.head {
+    width: 90%;
+    height: 32px;
+    padding: 12px 30px;
+    overflow: hidden;
+    background: rgba(255, 193, 7, 1);
+    box-sizing: content-box;
 }
 
 .btn-close {
-  font-size: 28px;
-  display: block;
-  float: right;
-  color: #fff;
+    font-size: 28px;
+    display: block;
+    float: right;
+    color: #fff;
 }
 
 .content {
-  padding: 10%;
+    padding: 10%;
 }
 
 .good-job {
-  text-align: center;
-  font-family: 'Montserrat', Arial,Helvetica, sans-serif;
-  color:rgba(255, 193, 7, 1);
-}
-.good-job .fa-clock {
-  font-size: 60px;
-}
-.good-job h1 {
-  font-size: 45px;
+    text-align: center;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: rgba(255, 193, 7, 1);
 }
 
-.btn{
-  border-radius:15px;
-  padding: 10px;
+.good-job .fa-clock {
+    font-size: 60px;
+}
+
+.good-job h1 {
+    font-size: 45px;
+}
+
+.btn {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* To hide scrollbar */
+.screen {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-right: 14px;
+    padding-right: 28px;
+    /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
+    padding-bottom: 15px;
+    /*This would hide the scroll bar of the bottom if there is one*/
 }
